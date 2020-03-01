@@ -56,7 +56,7 @@ const app = new Vue({
         
       },
       onClick() {
-        window.location.href = 'first.html';
+        window.location.href = 'index.html';
       },
       startAddAppt(number) {
         this.index = number;
