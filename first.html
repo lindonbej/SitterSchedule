@@ -1,0 +1,60 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sitter Schedule</title>
+    <!-- <link rel="stylesheet" href="https://ez-css.now.sh"> -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="first.css">
+  </head>
+  <body>
+    <main id="firstApp">
+      <div class=header>
+        <div class=logo>SitterSchedule</div>
+        <div class=buttons>
+          <button class=header-button v-on:click="onClick">Sign In</button>
+          <button class=header-button v-on:click="onClick">Sign Up</button>
+        </div>
+      </div>
+      <div class=content>
+        <div class=intro>
+          <img src="intro1.jpg">
+          <div>
+            <p id=intro-pitch>Always have a babysitter when you need one - without calling or coordinating</p>
+            <button class=first-button id=intro-button v-on:click="onClick">Try It Out</button>
+          </div>
+        </div>
+        <div class=details>
+          <h2 id=detail_head>See how easy it is to get a babysitter with SitterSchedule:</h2>
+          <div class=detail-block id=detail1>
+            <p class=count>1</p>
+            <p class=step>Make a list of babysitters you trust</p>
+            <img src="detail1.png">
+          </div>
+          <div class=detail-block id=detail2>
+            <p class=count>2</p>
+            <p class=step>Pick a date that you need a sitter</p>
+            <img src="detail2.png">
+          </div>
+          <div class=detail-block id=detail3>
+            <p class=count>3</p>
+            <p class=step>We'll schedule the babysitter</p>
+            <img src="detail3.jpg">
+          </div>
+          <button class=first-button id=details-button v-on:click="onClick">Get Started!</button>
+        </div>
+        <div class=footer>
+          <p>Cell phone image courtesy of <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@olegmagni?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Oleg Magni"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Oleg Magni</span></a></p>
+          <div id=links>
+            <h6>About</h6>
+            <h6>Contact Us</h6>
+          </div>
+        </div>
+      </div>
+    
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+    <script src="firstApp.js" charset="utf-8"></script>
+    
+  </body>
+</html>

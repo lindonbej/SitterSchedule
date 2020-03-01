@@ -1,0 +1,125 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://ez-css.now.sh">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css">
+  </head>
+  <body>
+    <main id="homeApp">
+        <div class=header>
+            <div class=logo>SitterSchedule</div>
+            <div class=buttons>
+                <button v-on:click="onClick">Log Out</button>
+            </div>
+        </div>
+        <div class=content>
+            <div class=calendar-section>
+                <div class="top-holder"> 
+                        <div class="calendar-month">
+                            <button class="month"><</button>
+                            <h4>February</h4>
+                            <button class="month">></button>
+                        </div>
+                        
+                        <!-- <div class=add-button>
+                            <button v-on:click="apptAddButtonHidden = false">+ New Event</button>
+                        </div> -->
+                </div>
+                
+                <div class=calendar-body>
+                    <div class=add-appt v-if="!apptAddButtonHidden">
+                        <!-- <button v-on:click="apptAddButtonHidden = true">X</button> -->
+                        <form @submit.prevent="addAppt">
+                            <div class="app-input">
+                                <label for="newApptTime">Time</label>
+                                <input class="input" v-model="newApptTime" type="text" name="newApptTime" id="newApptTime" value="">
+                            </div>
+                            
+                            <div class="button-holder"> 
+                                <button class="cancel" v-on:click="apptAddButtonHidden = true">Cancel</button>
+                                <button class="add-sitter" type="submit" name="add-appt-button" >Submit</button>
+                                
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <ol class=cal-headers>
+                        <li>Sunday</li>
+                        <li>Monday</li>
+                        <li>Tuesday</li>
+                        <li>Wednesday</li>
+                        <li>Thursday</li>
+                        <li>Friday</li>
+                        <li>Saturday</li>
+                    </ol>
+                    <ol class=cal-days>
+                        <li v-for="day in days">
+                            <!-- <div class=day>
+                                {{day.date}}
+                                <div v-if="day.hasEvent">
+                                    <div class=found-text v-if="day.hasSitter">Sitter Found!</div>
+                                    <div class=not-found-text v-if="!day.hasSitter">No Sitter Yet</div>
+                                </div>
+                            </div> -->
+                            <div>
+                                <button class="day-button" v-on:click="startAddAppt(day.index)">
+                                    {{day.date}}
+                                    <div v-if="day.hasEvent">
+                                        <div class=found-text v-if="day.hasSitter">Sitter Found!</div>
+                                        <div class=not-found-text v-if="!day.hasSitter">No Sitter Yet</div>
+                                    </div>
+                                </button>
+                            </div>
+                        </li>
+                        
+                    </ol>
+                    
+                </div>
+                <div class=calendar>
+
+                </div>
+            </div>
+            <div class=list>
+                <h4>Sitter List</h4>
+                <ol class="sitter-list">
+                    <li v-for="sitter in sitters">
+                        {{sitter}}
+                        <!-- <div class="sitter">
+                            {{sitter}}
+                        </div> -->
+                    </li>
+                </ol>
+                <div class=add-sitter-button>
+                    <button v-if="sitterAddButtonHidden" v-on:click="sitterAddButtonHidden = false">+ New Sitter</button>
+                </div>
+                
+                <div class=add-form v-if="!sitterAddButtonHidden" >
+                    <!-- <button v-on:click="sitterAddButtonHidden = true">X</button> -->
+                    <form @submit.prevent="addSitter">
+                        <label for="newSitterName">Sitter Name</label>
+                        <input class="input" v-model="newSitterName" type="text" name="newSitterName" id="newSitterName" value="">
+
+                        <label for="newSitterNumber">Sitter Phone Number</label>
+                        <input class="input" v-model="newSitterNumber" type="text" name="newSitterNumber" id="newSitterNumber" value="">
+                        <div class="button-holder">
+                            
+                            <button class="cancel" v-on:click="sitterAddButtonHidden = true">Cancel</button>
+                            <button class="add-sitter" type="submit" name="add-sitter-button" >Submit</button>
+                        </div>
+                        <!-- <button type="submit" name="add-sitter-button" >Submit</button> -->
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+     
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+    <script src="homeApp.js" charset="utf-8"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,30 @@
+/* body {
+    background-color: #eeeeee
+} */
+
+.header {
+    background-color: #2B46DA;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 50px;
+    color: white;
+    padding: 13px 29px;
+    font-family: Baskerville, "Baskerville Old Face";
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.buttons button {
+    height: 35px;
+    font-size: 20px;
+    margin: 25px;
+    border-radius: 10px;
+}

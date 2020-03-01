@@ -1,0 +1,196 @@
+div {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+.cal-headers {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 0px;
+}
+
+.cal-headers li {
+    text-align: center;
+}
+
+.cal-days {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    padding: 0;
+}
+
+.calendar-body {
+    font-size: 22px;
+}
+.day {
+    border: 1px solid gray;
+    height: 100px;
+}
+
+.add-appt {
+    /* grid-row: 2 / span 3;
+    grid-column: 2 / span 5; */
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.list {
+    width: 25%;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    background-color: #97A3FE;
+    border-radius: 10px;
+    border: none;
+}
+
+.list h4 {
+    margin: 0;
+    text-align: center;
+    font-family: Baskerville, "Baskerville Old Face";
+}
+
+.calendar-section {
+    width: 75%;
+    padding: 10px;
+}
+.content {
+    display: flex;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 140px;
+}
+.sitter-list {
+    margin: 20px;
+    padding: 0px;
+}
+
+.sitter-list li {
+    font-size: 20px;
+    font-family: Baskerville, "Baskerville Old Face";
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    list-style-position: inside;
+    margin: 8px;
+    padding: 10px;
+}
+
+.day-button {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 78px;
+}
+
+.add-button {
+    font-size: 14px;
+    width: 263px;
+    padding: 45px;
+}
+
+.add-sitter-button {
+    font-size: 20px;
+    width: 263px;
+    padding: 17px;
+}
+
+.add-sitter-button button {
+    width: fit-content;
+    background-color: #FFD53F;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.add-form label {
+    font-size: 25px;
+    
+}
+
+.input {
+    padding: 0;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+
+.cancel {
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+}
+
+.app-input {
+    display: flex;
+    padding: 10px;
+}
+
+.app-input label {
+    padding: 10px;
+}
+
+.calendar-month {
+    display: flex;
+    width: fit-content;
+    font-family: Baskerville, "Baskerville Old Face";
+}
+
+.month {
+    width: 45px;
+    height: 45px;
+    margin: 39px 10px 0px 10px;
+    background-color: #FFD53F; 
+    border-radius: 10px;
+    border: none;
+    padding: 0px 10px 7px;
+}
+
+.button-holder {
+    display: flex;
+    font-size: 25px;
+    
+}
+
+.add-sitter {
+    background-color: #43A04C;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: fit-content;
+    padding: 10px;
+    
+}
+
+.top-holder {
+    display: flex;
+    justify-content: space-around;
+}
+
+.found-text, .not-found-text {
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+.found-text {
+    background-color: #43A04C;
+}
+
+.not-found-text {
+    background-color: #C03636;
+}

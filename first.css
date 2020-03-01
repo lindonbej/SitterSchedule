@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1900px;
+    margin: 0 auto;
+}
+
+.header-button {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.intro {
+    height: 800px;
+    display: flex;
+    justify-content: space-around;
+    display: grid;
+    grid-template-rows: repeat(80, 1fr);
+    grid-template-columns: repeat(190, 1fr);
+}
+
+.intro div {
+    margin: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    grid-row: 15 / span 40;
+    grid-column: 105 / span 70;
+}
+
+.intro img {
+    width: 900px;
+    grid-row: 10 / span 60;
+    grid-column: 10 / span 90;
+    border-radius: 20px;
+}
+
+#intro-pitch {
+    font-size: 48px;
+}
+
+.first-button {
+    font-size: 30px;
+    background-color: #FFD53F;
+    border-radius: 10px;
+}
+
+#intro-button {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px
+}
+
+.details {
+    display: grid;
+    grid-template-rows: 1fr 6fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 25px;
+    padding-top: 0px;
+    border-radius: 10px;
+}
+
+.detail-block {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.count {
+    font-size: 72px;
+}
+
+.step {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.detail-block img {
+    border-radius: 10px;
+    width: 400px;
+    margin-left: 80px;
+    border: 1px solid black;
+}
+
+#detail_head {
+    font-size: 30px;
+    height: 35px;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+}
+
+#detail1 {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    background-color: #f0f0f0;
+}
+
+#detail2 {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+
+#detail3 {
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 1;
+    background-color: #f0f0f0;
+}
+
+#details-button {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+    height: 50px;
+    width: 400px;
+    align-self: center;
+    justify-self: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #97A3FE;
+    align-items: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+#links {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 50px;
+}
+
+#links h6 {
+    font-size: 20px;
+    padding: 15px;
+}
+
+
